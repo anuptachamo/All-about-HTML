@@ -54,6 +54,183 @@
     <!-- Hr Tag = Used to display a horizontal ruler, used to separate content -->
     <hr>
 
-<h1>58:38</h1>
+    <!-- subscript and superscript Tag = USed to display a horizontal ruler, used to separate content-->
+    <p>H<sub>2</sub>0</p>  <!-- Subscript-->
+    <p>3 <sup>2</sup> + 9</p> <!-- superscript-->
+    <hr>
+    
+    <!--Pre Tag = Used to display text as it is (without ignoring spaces and next line)  -->
+    <pre>I                am learning HTMl from 
+        beginner</pre>  <!--count all spaces-->
+    <hr>
+    <hr>
+
+    <div>
+        <p>I am using div tag</p>
+    </div>
+    
+    <!-- List in HTML -->
+    <!-- Listss are used to represent real life list data. -->
+
+    <!-- unordered -->
+    <ul>
+        <li>Apple</li>
+        <ul>
+            <li>color: red</li>
+            <ul>
+                <li>location: ktm</li>
+            </ul>
+        </ul>
+        <li>Mango</li>
+    </ul>
+
+    <!-- ordered -->
+    <ol>
+        <li>Apple</li>
+        <ol>
+            <li>color: red</li>
+            <ol>
+                <li>location: ktm</li>
+            </ol>
+        </ol>
+        <li>Mango</li>
+    </ol>
+
+    <hr>
+
+
+    <!-- Tables in HTML -->
+    <!-- Tables are used to represent real life table data. -->
+    <!-- <tr>Used to display table row</tr> -->
+    <!-- <td>used to display table data</td> -->
+    <!-- <th>used to display table header</th> -->
+
+
+    <table>
+        <caption>Students Data</caption>
+        <!-- <thead>to wrap table head</thead> -->
+        <!-- <tbody>to wrap table body</tbody> -->
+        <thead>
+            <>
+            <th colspan="2">Information</th>   <!-- mergering a columns-->
+            <th>Roll No</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Anup</td>
+                <td>21</td>
+            </tr>
+
+            <tr>
+                <td>Rati</td>
+                <td>24</td>
+            </tr>
+
+            <tr>
+                <td>Kritish</td>
+                <td>25</td>
+            </tr>
+        </tbody>    
+    </table>
+    <hr>
+    <br>
+    <br>
+
+
+    <!-- Form in HTML -->
+    <!-- Forms are used to collect data from the user -->
+    <!-- Eg- sign up/login/help requests/contact me -->
+
+    <!-- Action in Form -->
+    <!-- action attribute is used to define what action needs to be performed when a form is submitted -->
+
+    <form action="/action.php">
+        <h2>HTML Form</h2>
+        <!-- Form Element: Input -->
+        <input type="text" placeholder="Enter Username">
+        <input type="password" name="" id="" placeholder="Enter password">
+        <br>
+        <br>
+        <!-- Label is used for giving a special name -->
+        <h4>Select Your Class:</h4>
+        <label for="id1">
+            <input type="radio" value="class 1" name="class" id="id1">Class 1
+        </label>
+    
+        <label for="id2">
+            <input type="radio" value="class 2" name="class" id="id2">Class 2
+        </label>
+
+        <!-- CLASS and ID -->
+        <!-- <div id="id1" class="group1">
+            <p>First</p>
+        </div>
+        <div id="id2 class="group1">
+            <p>Second</p>
+        </div> -->
+        <br>
+
+
+        <!-- Checkbox -->
+        <div>
+            <h4>Select your Subject:</h4>
+            <label for="Math">
+                <input type="checkbox" value = "math "name="subject" id="Math">Math <!-- ID is used for BACKEND-->
+            </label>
+
+            <label for="Computer">
+                <input type="checkbox" value = "computer "name="subject" id="Computer">Computer <!-- ID is used for BACKEND-->
+            </label>
+
+            <label for="Science">
+                <input type="checkbox" value = "Science "name="subject" id="Science">Science <!-- ID is used for BACKEND-->
+            </label>
+
+            <label for="English">
+                <input type="checkbox" value = "English "name="subject" id="English">English <!-- ID is used for BACKEND-->
+            </label>
+        </div>
+        <br>  
+        <!-- Select tag -->
+        <b>City name:</b>
+        <select name="city" id="">
+            <option value="">Select your city</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Bhaktapur">Bhaktapur</option>
+            <option value="Jagati">Jagati</option>
+            <option value="Golmadhi">Golmadhi</option>
+        </select>
+        <br><br>
+
+       <div>
+            <textarea name="Feedback" id="101"placeholder = "Any feedback" cols="30" rows="10"></textarea>
+        </div>
+
+        <br>
+        <input type="submit" value="Submit" name="" id="" style="color: green;">
+
+<hr><br><br>
+        <!-- iframe Tag -->
+        <!-- Website inside website -->
+        <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VaE96PrZh3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <div>
+        <iframe src="https://youtube.com" frameborder="0" width="1500"height="1000" ></iframe>
+        </div>
+        <hr>
+        <br>
+
+
+        <!-- Video Tag -->
+        <video width="560" height="315" src="video/test.mp4" controls loop>Enjoy</video>
+    </form>
+
+
+
+    
 </body>
 </html>
