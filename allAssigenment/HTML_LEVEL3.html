@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML (Level 3)</title>
+</head>
+<body>
+    <!-- *Qs1. Recreate the following table using HTML -->
+    <h3>Qs1. Recreate the following table using HTML </h3>
+    <table border="black">
+        <caption>Student Information</caption>
+        <!-- <thead> -->
+            <tr>
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+        <!-- </thead> -->
+
+        <!-- <tbody> -->
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+        <!-- </tbody> -->
+    </table><br>
+    <hr><hr>
+
+    <h3>Qs2. Recreate the following form using HTML</h3>
+    <form action="/server">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" >
+        </div>
+
+        <div>
+            Sex:
+            <input type="radio" name="sex" id="sex" value="m">
+            <label for="sex"> Male</label>
+
+            <input type="radio" name="sex" id="sex" value="f">
+            <label for="sex"> female</label>
+        </div>
+
+        <div>
+            Country: 
+            <select name="country" id="">
+                <option> Select an option</option>
+                <option value="nepal">Nepal</option>
+                <option value="india">India</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="feedback">Message: </label><br>
+            <textarea name="message" id="feedback" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" name="subscriber" id="subscriber">
+            <label for="subscriber">subscribe?</label>
+        </div>
+
+        <button>submit</button>
+    </form>
+</body>
+</html>
