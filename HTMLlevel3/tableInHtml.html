@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML</title>
+</head>
+<body>
+    <!-- *Table in HTML
+            tables are used to represent real life table data 
+            
+            syntax 
+                <table>
+                    <caption> table caption </caption>
+                    <tr>  //table row
+                        <th> header 1</th>  //table header
+                        <th> header 2</th>
+                    </tr>
+
+                    <tr>
+                        <td> data 1</td>  //table data 
+                        <td> data 2</td>
+                    </tr>
+                </table> -->
+            
+            <!--    Semantics in Tables
+                    <thead>    -> to wrap table header 
+                    <tbody>    -> to wrap table body
+                    <tfoot>    -> to wrap table footer-->
+
+            <!-- Colspan and Rowspan Attributes
+                    used to create cells which spans over multiple rows or columns
+                    rowspan = ""
+                    colspan = ""-->
+    
+    <table border="black">
+            <caption> Food Menu</caption>
+        <!-- table header -->
+        <thead>
+            <tr>
+                <th rowspan="2"> Item</th>
+                <th colspan="2"> Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+
+            <!-- Table body -->
+            <tbody>
+                <tr>
+                    <td>Froti </td>
+                    <td>10</td>
+                    <td>0.14</td>
+                </tr>
+
+                <tr>
+                    <td>samosa </td>
+                    <td>12</td>
+                    <td>0.17</td>
+                </tr>
+
+                <tr>
+                    <td>Chips </td>
+                    <td>10</td>
+                    <td>0.14</td>
+                </tr>
+            </tbody>
+    </table>
+
+    
+
+</body>
+</html>
