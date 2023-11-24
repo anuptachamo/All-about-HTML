@@ -1,0 +1,30 @@
+/* Basic Format of CSS 
+    `h1 is a selector
+    color is Property
+    red is a value
+h1{ 
+    color: red;
+} 
+
+Explore more with this link => https://developer.mozilla.org/en-US/docs/Web/CSS/Reference*/
+
+
+/* How to include Styles
+    - Inline Styles
+        Writing style directly inline on each element
+        <h1 style = "color: red"> Apna College </h1>
+        
+    - Using <style> tag
+        style is added using the <style> element in the same document
+            <style>
+                h1{
+                    color : red;
+                }
+            </style>/
+
+    - External Stylesheets
+        Writing CSS in a separate document and linking it with HTML file */
+
+h1{
+    color: aqua;
+}
