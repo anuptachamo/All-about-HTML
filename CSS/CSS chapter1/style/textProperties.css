@@ -1,0 +1,21 @@
+#text-align{
+    text-align: center;
+}
+
+#font-weight{
+    font-weight: 100;
+    text-decoration: line-through;
+    text-decoration-color: aqua;
+}
+
+#text-decoration{
+    text-decoration-color: blue;
+}
+
+#line-height{
+    line-height: 2.9;
+}
+
+#letter-spacing{
+    letter-spacing: 2px;
+}
