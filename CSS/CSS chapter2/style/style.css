@@ -1,0 +1,107 @@
+/* Universal Selector */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: #b92b27;
+}
+
+/* Element Selector */
+h2, h3{
+    color: #b92b27;
+}
+
+/* id Selector */
+#login{
+    background-color: #fff;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+/* class Selector */
+.upvote{
+    background-color: #2f7b2f;
+    color: white;
+}
+
+/* Descendant Selector */
+.post a{
+    color: purple;
+}
+
+/* Sibling Combinator */
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: rgb(48, 99, 200);
+    color: white;
+}
+
+/* Child Combinator */
+div > input{
+    background-color: darksalmon;
+    color: white;
+}
+
+/* Attribute Selector */
+input[type = "text"],
+input[type = "password"]{
+    color: green;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}
+
+/* Pseudo class */
+button:hover{
+    color: white;
+    background-color: #000;
+}
+
+button:active{  /*click garda color change garna active use garxa*/
+    background-color: purple;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+.post:nth-of-type(2n){
+    background-color: aquamarine;
+}
+
+/* Pseudo Elements */
+h1::first-letter{
+    color: black;  /*changed the color of h1 first letter*/
+}
+
+p::first-line{
+    color: blue;  /*changing the color of p tag first line to blue color*/
+}
+
+p::selection{
+    background-color: rgb(139, 183, 95);  /*while selecting any p tag the bg-color will be this*/
+}
+
+
+/* CSS: Cascading StyleSheets */
+h3{
+    background-color: green;
+}
+
+h3{
+    background-color: linen; /*final color of h3 element is now linen*/
+}
+
+/* !important */
+h4{
+    background-color: #2f7b2f !important;   /* while using !important we can't change the color of h4*/
+}

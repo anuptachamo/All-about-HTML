@@ -1,0 +1,41 @@
+/* *For the given html and css code, what is color of h1 */
+h1{
+    color: pink;
+}
+
+#greet {
+    color: yellow;
+}
+
+.myClass{
+    color: brown;
+}
+/* The answer  will be yellow because according to the Selector Specificity first priority given to a id*/
+/* *For the given html and css code, what is background color of p  */
+div p{
+    background-color: #000;
+}
+
+.para{
+    background-color: blue;
+}
+
+p{
+    background-color: green;
+}
+/* The answer  will be blue because according to the Selector Specificity first priority given to a id and after that class*/
+
+/* *For the given html and css code, what is color of text "Hello world"  */
+div.greetDiv .greet{
+    color: green;
+}
+
+.greetDiv p.greet {
+    color: blue;
+}
+
+.greetDiv .greet{
+    color: red;
+}
+
+/* The answer  will be blue not a green because according to the Selector Specificity first priority given to a id and after that class and lastly element but in this case we got same number in green and blue deu to that we use cascading so blue is an answer*/

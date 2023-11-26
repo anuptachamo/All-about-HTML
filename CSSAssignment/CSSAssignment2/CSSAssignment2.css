@@ -1,0 +1,50 @@
+/* ########################### PART A ##################### */
+
+*{
+    text-align: center;
+}
+
+#mainTopic{
+    color: blue;
+}
+
+h1, h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.para{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.btn{
+    background-color: purple;
+    color: azure;
+}
+
+/* ########################### PART A ##################### */
+
+
+/* ########################### PART B (Pseudo class and elements) ##################### */
+.btn:hover{
+    color: blue;
+    background-color: yellow;
+}
+
+h1::first-letter{
+    color: red;
+}
+
+label:active{
+    color: darkgreen;
+}
+
+.para:nth-of-type(2n + 1){
+    color: yellow;
+}
+
+/* ########################### PART B (Pseudo class and elements) ##################### */
+
+
+
+
