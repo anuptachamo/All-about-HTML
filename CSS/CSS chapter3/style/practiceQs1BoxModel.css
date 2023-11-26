@@ -1,0 +1,41 @@
+.outer-div{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+    
+}
+
+.main{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.inner-div1, .inner-div2, .inner-div3{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.inner-div1{
+    background-color: red;
+}
+
+.inner-div2{
+    background-color: yellow;
+}
+
+.inner-div3{
+    background-color: green;
+}
+
+.stand{
+    width: 15px;
+    height: 50px;
+    border: 2px solid black;
+    margin-left: 25px;
+    background-color: #000 ;
+    
+
+}
