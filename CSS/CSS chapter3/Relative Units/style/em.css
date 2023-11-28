@@ -1,0 +1,22 @@
+#outerem{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: peru;
+    font-size: 20px;  
+}
+
+#innerem{
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    font-size: 2em;  /* if outerem font-size: 20px; and while setting innerem font-size: 2em; is mean that 20*2 = 40px will be inner font-size*/
+    padding: 1em;    /*if innerem font-size: 2em = 40px; then padding 1em = 40px */
+}
+
+button{
+    font-size: 50px;
+    border-radius: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
+}

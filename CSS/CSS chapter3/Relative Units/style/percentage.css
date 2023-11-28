@@ -1,0 +1,17 @@
+h1{
+    border: 2px solid black;
+    width: 50%;
+}
+
+#outerdiv{
+    height: 400px;
+    width: 300px;
+    background-color: aqua;
+}
+
+#innerdiv{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(56, 205, 45);
+    margin-left: 10%;
+}

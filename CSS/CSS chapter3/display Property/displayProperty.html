@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Property</title>
+    <link rel="stylesheet" href="style/displayProperty.css">
 </head>
 <body>
     <!-- *Inline v/s Block
@@ -13,6 +14,30 @@
         
         ?Inline elements
             Takes up only necessary width
-            don't start from new line-->
+            don't start from new line
+        
+        ?display
+            It sets whether an elements is treated as a block or inline element and the layout used for its children
+                display: inline
+                display: block
+            explore more with this link => https://developer.mozilla.org/en-US/docs/Web/CSS/display-->
+
+    <div></div>
+    <div></div>
+    <div id="third"></div>
+    <!-- <div></div> -->
+
 </body>
+    <!-- *Block and Inline Conclusions
+        ?Block
+            - Always start on a new line
+            - Take up as much horizontal space as possible (the full width of the container or browser window if there is no container)
+            - will respect width and height CSS properties
+            - Horizontal and vertical margins both work
+        
+        ?Inline
+            - Do not start on a new line
+            - Only use as much horizontal space as required by the content. Do not accept width and height CSS properties.
+            - Margins will work horizontally, but not vertically
+            - padding works on all sides, but the top and bottom may overlap other elements.-->
 </html>
