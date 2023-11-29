@@ -17,6 +17,15 @@
 button{
     font-size: 50px;
     border-radius: 15px;
-    padding-left: 1em;
+    padding-left: 1em;   /*1em = 50px because the button font-size is 50px if the button font-size is 20px the padding-left 1em =20px*/
     padding-right: 1em;
+}
+
+
+section{
+    font-size: 20px;
+}
+
+.div1{
+    font-size: 2rem;
 }
