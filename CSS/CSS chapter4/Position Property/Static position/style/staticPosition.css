@@ -1,0 +1,16 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    display: inline-block;
+    margin: 0 0 0 30px;
+}
+
+#static{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(212, 255, 0);
+    position: static;
+    top: 100px;
+    right: 100px;     /*There will be a no changes because while using position static the default value is use*/
+}

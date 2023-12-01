@@ -1,0 +1,9 @@
+#boxShadow{
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+    color:white;
+    background-color: rgb(255, 153, 0);
+    text-align: center;
+    box-shadow: 1px 2px 10px rgb(39, 44, 39);    /*X offset | y offset | blur radius | color*/
+}

@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    display: inline-block;
+    margin: 50px 0 10px 30px;
+}
+
+p{
+    text-align: justify;
+}
+
+#absolute{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(212, 255, 0);
+    position: absolute;
+    top: 100px;
+    left: 100px;
+        /* absolute use garda document ko body ma measure garxa hamle create gareko section or div ma hundaina/  */
+}

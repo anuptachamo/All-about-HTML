@@ -1,0 +1,30 @@
+#rotate{
+    width: 20px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+#scale{
+    color: white;
+    background-color: rgb(229, 21, 21);
+    transform: scale(0.5);
+}
+
+#translate{
+    color: white;
+    background-color: rgb(21, 229, 25);
+    transform: translateX(100px);
+}
+
+#skew{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(73, 21, 229);
+    transform: skew(30deg);
+}
