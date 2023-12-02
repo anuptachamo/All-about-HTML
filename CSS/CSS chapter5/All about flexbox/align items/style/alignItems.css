@@ -1,0 +1,24 @@
+#container{
+    height: 300px;
+    background-color: rgb(192, 201, 198);
+    border: 1px solid black;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    align-items: baseline;
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height: 50px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

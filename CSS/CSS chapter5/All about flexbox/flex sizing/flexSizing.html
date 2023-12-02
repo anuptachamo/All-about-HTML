@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Sizing</title>
+    <link rel="stylesheet" href="style/flexSizing.css">
+</head>
+<body>
+    <!-- Flex Sizing
+            - flex-basis
+                It sets the initial main size of a flex item.
+                    flex-basis: 100px;
+                
+            - flex-grow
+                    It specifies how much of the flex container's remaining space should be assigned to the flex item's main size
+                        flex-grow: 1 (default);
+                    
+            ?Flex Shorthand
+                => flex-grow | flex-shrink | flex-basis
+                    flex : 2 2 100px;
+                
+                => flex-grow | flex-basis
+                    flex: 2 100px;
+                
+                => flex-grow (unitless)
+                    flex: 2;
+                
+                => flex-basis
+                    flex : 100px-->
+
+    <h1>Flexbox Playground (flex Sizing)
+    <div id="container">
+        <div style="background-color: rgb(216, 23, 23);">red</div>
+        <div id="skyblue" style="background-color: rgb(27, 117, 196);">sky blue</div>
+        <div style="background-color: rgb(17, 185, 163); height: 35px;">light blue</div>
+        <div style="background-color: rgb(163, 18, 37);">dark red</div>
+        <div style="background-color: rgb(141, 103, 26);">orange</div>
+        <div id="green" style="background-color: rgb(113, 196, 19);">green</div>
+        <div style="background-color: rgb(185, 26, 138);">pink</div>
+    </div>
+</body>
+</html>
