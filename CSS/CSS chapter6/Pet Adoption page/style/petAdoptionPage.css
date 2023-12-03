@@ -1,0 +1,52 @@
+h2{
+    color: orange;
+}
+
+span{
+    color: orange;
+}
+
+#pets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 400px;
+    border: 2px solid black; 
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px; 
+    
+}
+
+img{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify ;
+}
+
+h4{
+    text-align: right;
+    color: #3c787e;
+}
+
+.card:hover{
+    background-color: orange;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+
+}
+
+
+@media (max-width:450px){
+    #pets{
+        flex-wrap: wrap;
+    }
+}
