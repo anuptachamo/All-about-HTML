@@ -1,0 +1,100 @@
+#container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);  /*12 ota columns banako cha vanera bujnu paryo */
+    grid-template-rows: repeat(12, 1fr);    /*12 ota rows banako cha vanera bujnu paryo*/
+    grid-gap: 10px;                         /*rows gap 10px cha vanera bujnu paryo*/
+    background-color: pink;
+}
+
+header{
+    grid-column: 1/span 12;  /*column 1 dekhi columns 12 sama liyeko vanera bujnu paryo*/
+    border: 2px solid black;
+}
+
+.sidebar{
+    grid-column: 1/span 3;  /*column 1 dekhi column 3 sama sidebar le cover gareko vanera bujnu paryo*/
+    grid-row: 2/ span 10;   /*row 2 dekhi, rows 10 sama cover gareko vanera bujnu paryo*/
+    border: 2px solid black;
+
+}
+
+.navigation{
+    grid-column: 4/ span 6; /*column 4 dekhi arko 6 plus column cover gareko vanera bujnu paryo*/
+    border: 2px solid black;
+
+}
+
+main{
+    grid-row: 3/ span 9; /*row 3 dekhi arko 9 plus rows cover gareko vanera bujnu paryo*/
+    grid-column: 4/ span 6;  /*column 4 dekhi arko 6 plus column liyeko vanera bujnu paryo*/
+    border: 2px solid black;
+
+}
+
+.ads{
+    grid-column: 10/ span 3;    /*column 10 dekhi arko 3 plus columns cover gareko xa vanera bujnu paryo*/
+    grid-row: 2/span 10;            /*row 2 dekhi arko 10 plus rows cover garxa vanera bujnu paryo*/
+    border: 2px solid black;
+}
+
+footer{
+    border: 2px solid black;
+    grid-column: 1 / span 12;  /*column 1 dekhi arko 12 plus columns cover gareko xa vanera bujnu paryo*/
+}
+
+
+/* *Qs2. Use Media Queries to change the above layout the given one when the viewport width goes below 720px. */
+@media (max-width: 720px) {
+    header{
+        grid-column: 1/ span 12;
+    }
+
+    .navigation{
+        grid-column: 1 / span 12;
+        grid-row: 2;
+    }
+
+    .sidebar{
+        grid-column: 1 /span 3;
+        grid-row: 3/ span 9;
+    }
+
+    main{
+        grid-column: 4 / span 9;
+        grid-row: 3 / span 9;
+    }
+
+    .ads{
+        grid-column: 1/ span 3;
+        grid-row: 12;
+    }
+
+    footer{
+        grid-column: 4 / span 9;
+        grid-row: 12;
+    }
+}
+
+
+ /* *Qs3 Try to complete this code to create a web page loader using CSS animations.  */
+ .main-loader {
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid goldenrod;
+    border-radius: 50%;
+    animation: spin 2s linear infinite normal;
+    }
+    @keyframes spin {
+    0% {
+        /* Set rotation to 0 degrees */
+        transform: rotate(0);
+    }
+    100% {
+        /* Set rotation to 360 degrees */
+        transform: rotate(360deg);
+    }
+    }

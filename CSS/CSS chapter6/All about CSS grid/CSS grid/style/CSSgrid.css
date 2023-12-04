@@ -4,12 +4,12 @@
     background-color: rgb(186, 18, 18);
     display: grid;
     /* grid-template-rows: 100px 100px 100px; */
-    grid-template-columns: 100px 100px 100px;
+    /* grid-template-columns: 100px 100px 100px; */
     /* grid-template-columns: auto auto auto; */
-    grid-template-rows: repeat(3, 1fr); /* grid-template-rows: repeat(1fr, 1fr, 1fr); */
-    /* row-gap: 50px;
-    column-gap: 30px; */
-    grid-gap: 50px 30px;
+    grid-template-columns: repeat(3, 1fr); /* grid-template-rows: repeat(1fr, 1fr, 1fr); */
+    row-gap: 50px;
+    /* column-gap: 30px; */
+    /* grid-gap: 50px 30px; */
     
     
 }
@@ -20,3 +20,6 @@
     border: 2px solid white;
     background-color: greenyellow;
 }
+
+
+
