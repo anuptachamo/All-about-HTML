@@ -86,7 +86,7 @@ footer{
     border: 16px solid #f3f3f3;
     border-top: 16px solid goldenrod;
     border-radius: 50%;
-    animation: spin 2s linear infinite normal;
+    animation: spin 2s linear infinite normal                                                                                                                                         ;
     }
     @keyframes spin {
     0% {
