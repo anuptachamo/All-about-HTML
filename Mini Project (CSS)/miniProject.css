@@ -6,25 +6,25 @@
 }
 
 .main_box{
+    height: 100vh;
     background-image: url(photo.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
-
-.btn_one {
+.btn_one{
     color: white;
     position: absolute;
-    font-size: 20px;
-    font-weight: 400;
-    left: 16px;
-    line-height: 60px;
+    font-weight: 700;
+    font-size: 25px;
+    left: 25px;
+    top: 20px;
     cursor: pointer;
 }
 
+
 .sidebar_menu{
     position: fixed;
-    /* left: -250px; */
+    left: -350px;
     height: 100vh;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -46,24 +46,20 @@
     font-weight: 700;
 }
 
-.sidebar_menu .menu{
-    position: absolute;
-    top: 80px;
-}
-
 .sidebar_menu .btn_two i{
     color: gray;
     font-size: 25px;
     line-height: 60px;
     position: absolute;
     left: 260px;
-    opacity: 0;
+    /* opacity: 0; */
     cursor: pointer;
 }
 
-.sidebar_menu .menu li{
-    margin-top: 6px;
-    padding: 10px 20px;
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
 }
 
 .sidebar_menu .menu i, a{
@@ -72,36 +68,86 @@
     font-size: 20px;
     padding: 5px;
 }
-
-.sidebar_menu .social_media {
-    color: gray;
-    position: absolute;
-    top: 650px;
-    left: 50px;
-
+.sidebar_menu .menu li{
+    text-decoration: none;
+    margin-top: 6px;
+    padding: 10px 20px;  /*Top and bottom 10px || right and left 20px*/
 }
 
-#check{
-    display: none;
+.sidebar_menu .social_media {
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+
 }
 
 .sidebar_menu .menu li:hover{
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);   /*X offset | y offset | blur radius | color*/
     margin-left: 20px;
+    margin-right: 20px;
+    transition: 1s;
 
 }
 
 .btn_one i:hover{
-    font-size: 40px;
+    font-size: 30px;
+    transition: 1s;
 }
 
 .btn_two i:hover{
     font-size: 30px;
-}
-
-.sidebar_menu .social_media i:hover{
-    color: gray;
-    transform: scale(1.5);
+    transition: 1s;
 }
 
 
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+.sidebar_menu .social_media .f {
+    color: #ffffff;
+    transition: color 0.5s; /* Add transition for a smooth color change */
+}
+.sidebar_menu .social_media .f:hover{
+    background-color: #ffffff;
+    color: #0F83E2;
+    border-radius: 40px;
+
+}
+
+.sidebar_menu .social_media .t {
+    color: #ffffff;
+    transition: color 0.5s; 
+}
+.sidebar_menu .social_media .t:hover{
+    background-color: #ffffff;
+    color: #1C9CEA;
+    border-radius: 40px;
+
+}
+
+.sidebar_menu .social_media .i {
+    color: #ffffff;
+    transition: color 0.5s; 
+}
+.sidebar_menu .social_media .i:hover{
+    background-color: #ffffff;
+    color: #CF3E69;
+    border-radius: 40px;
+
+}
+
+.sidebar_menu .social_media .y {
+    color: #ffffff;
+    transition: color 0.5s; 
+}
+.sidebar_menu .social_media .y:hover{
+    background-color: #ffffff;
+    color: #F60002;
+    border-radius: 40px;
+}
