@@ -162,7 +162,7 @@
     display: none;
 }
 
-#check:checked ~ .sidebar_menu{
+#check:checked ~ .sidebar_menu{  /*Subsequent-sibling combinator*/
     left: 0;
 }
 
