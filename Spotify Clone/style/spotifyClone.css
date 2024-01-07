@@ -28,16 +28,10 @@
     flex: 1;  /*baki vako thau main-content laii deu vaneko*/
     border-radius: 1rem;  /*16px*/
     overflow: auto;  /*overflow auto halne bela scrollbar jaile show hunna jahile chaixa tyo bela show hunxa */
+    padding: 0 1.5rem 0 1.5rem;
 
 }
 
-.music-player{
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 72px;
-}
 
 
 /* ../main/sidebar/nav/nav-option */
@@ -110,7 +104,9 @@ a{
 .icons i:hover{
     opacity: 1;
 }
-
+.lib-box{
+    margin: 0 0.5rem 0 0.5rem;
+}
 .box{
     height: 8rem;
     background-color: #232323;
@@ -161,6 +157,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    z-index: 10;
 }
 .sticky-nav-icons{
     margin-left: 0.75rem;
@@ -231,3 +228,155 @@ button .nav-item{
     }
 }
 
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+.music-card{
+    display: flex;
+    width: 25%;
+}
+
+.music-img{
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.music-title{
+    margin: 1rem 0 0 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.music-title:hover{
+    text-decoration: underline;
+}
+
+
+
+.music-info{
+    position: relative;
+    opacity: 0.5;
+    margin: 0.25rem 0 0 1rem;
+    font-size: 0.75rem;
+}
+
+.music-info:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.hearticon{
+    position: relative;
+    margin: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.hearticon:hover{
+    opacity: 1;
+}
+
+.player{
+    width: 50%;
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.player-controls-icons{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.player-controls-icons:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;    /*default chrome ko style hataii dinxa*/
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #04471ca5;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.controls{
+    width :25%;
+    border: 1px solid white;
+}
