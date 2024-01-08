@@ -14,7 +14,7 @@
 
 }
 
-
+/* ########################################     sidebar started    ############################################################# */
 .sidebar{
     background-color: #000000;
     width: 350px;
@@ -23,22 +23,20 @@
     
 }
 
+/* ########################################     sidebar/main-content started    ############################################################# */
 .main-content{
     background-color: #121212;
     flex: 1;  /*baki vako thau main-content laii deu vaneko*/
     border-radius: 1rem;  /*16px*/
     overflow: auto;  /*overflow auto halne bela scrollbar jaile show hunna jahile chaixa tyo bela show hunxa */
     padding: 0 1.5rem 0 1.5rem;
-
 }
 
-
-
-/* ../main/sidebar/nav/nav-option */
 a{
     text-decoration: none;
 }
 
+/* ########################################     main/sidebar/nav started    ############################################################# */
 .nav{
     background-color: #121212;
     display: flex;
@@ -53,8 +51,6 @@ a{
     line-height: 2.5rem;
     opacity: 0.7;
     padding: 0.5rem 0.75rem;
-    
-
 }
 
 .nav-option:hover{
@@ -68,7 +64,10 @@ a{
     font-size: 1rem;
     margin-left: 1rem;
 }
+/* ########################################     main/sidebar/nav ENDED    ############################################################# */
 
+
+/* ########################################     main/sidebar/library Started    ############################################################# */
 .library{
     background-color: #121212;
     border-radius: 1rem;
@@ -90,7 +89,6 @@ a{
     width: 1.25rem;
 }
 
-
 .icons{
     font-size: 1rem;
     display: flex;
@@ -104,9 +102,11 @@ a{
 .icons i:hover{
     opacity: 1;
 }
+
 .lib-box{
     margin: 0 0.5rem 0 0.5rem;
 }
+
 .box{
     height: 8rem;
     background-color: #232323;
@@ -126,7 +126,6 @@ a{
     font-weight: 500;
     padding: 0.5rem 0 0.5rem 0;
 
-    
 }
 
 .badge{
@@ -148,7 +147,12 @@ a{
 .badge:hover{
     transform: scale(1);
 }
+/* ########################################     library ended    ############################################################# */
+/* ########################################     sidebar ENDED    ############################################################# */
 
+
+
+/* ########################################     Sticky-nav started    ############################################################# */
 .sticky-nav{
     position: sticky;
     top: 0;
@@ -376,7 +380,61 @@ button .nav-item{
     border-radius: 50%;
     margin-top: -6px;
 }
+
+
 .controls{
     width :25%;
-    border: 1px solid white;
+}
+
+.right-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+}
+
+.right-controls-icons{
+    height: 1rem;
+    margin-left: 1.5rem;
+    opacity: 0.7;
+}
+
+.right-controls-last-icons{
+    height: 1rem;
+    margin-left: 0.01rem;
+    opacity: 0.7;
+}
+.controls-playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls-progress-bar{
+    width: 80%;
+    appearance: none;    /*default chrome ko style hataii dinxa*/
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.controls-progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.controls-progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #04471ca5;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.right-controls-icons:hover, .right-controls-last-icons:hover{
+    opacity: 1;
 }
